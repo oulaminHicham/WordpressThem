@@ -21,11 +21,25 @@ body{
     border-radius: 10px;
     padding: 30px;
 }
+.main--post .post-auther ,
+.main--post .post-date ,
+.main--post .post-comments {
+  font-size: 12px ;
+}
+.main--post .post-content{
+  line-height: inherit;
+  color: #666 ;
+}
 .main--post h3{
     margin-top: 0;
     margin-bottom: 10px ;
     color: #262626;
     text-transform: capitalize;
     font-weight: 300;
+}
+.main--post svg{
+  width: 15px ;
+  height: 15px;
+  color:#262626 ;
 }
 /* end styling posts */
