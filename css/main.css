@@ -1,6 +1,7 @@
 /* strating rooles */
 body{
     background-color: #eee;
+    height: 500px ;
     }
 
 /* end rools */
@@ -37,9 +38,43 @@ body{
     text-transform: capitalize;
     font-weight: 300;
 }
+.main--post .post-date div{
+    display: inline;
+}
 .main--post svg{
   width: 15px ;
   height: 15px;
   color:#262626 ;
 }
 /* end styling posts */
+/* start styling pagination  */
+.post-pagination{
+  width: 500px ;
+  margin: 30px auto 40px ;
+  text-align: center;
+}
+/* end styling pagination */
+.post-pagination a ,
+.post-pagination span {
+  background-color: #fff;
+  padding: 10px 24px;
+  border-radius: 10px;
+}
+.post-pagination a:first-of-type{
+  margin-right: 10px ;
+}
+.post-pagination span{
+  opacity: 0.5 ;
+  cursor: not-allowed;
+}
+.post-pagination .next {
+  margin-left: 10px;
+}
+.post-pagination .prev{
+  margin-right: 10px ;
+}
+
+
+
+
+/* you start today from video 62 and it is include */

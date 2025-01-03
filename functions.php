@@ -1,9 +1,9 @@
-<?php 
+<?php
 
 // this is for boostrapnavworker
 require_once('bootsrapNavWorker.php') ;
 
-// this is function to add custom styles 
+// this is function to add custom styles
 
 function hicham_add_style(){
     wp_enqueue_style("boostrap_styling" , get_template_directory_uri()."/css/bootstrap.min.css") ;
@@ -11,7 +11,7 @@ function hicham_add_style(){
     wp_enqueue_style("main-css" , get_template_directory_uri()."/css/main.css" );
 }
 
-// this is function to add custom scripts 
+// this is function to add custom scripts
 
 function hicham_add_scripts(){
     wp_deregister_script('jquery') ; // remove regestration of jquery
@@ -49,3 +49,17 @@ function add_menu_to_dom(){
         )
     );
 }
+/*
+*add featured iamge to our them
+*/
+function add_featured_image(){
+  add_theme_support('post-thumbnails');
+
+}
+add_action('after_setup_theme', 'add_featured_image');
+// function to control how many words should be
+// dipslay when we use excerpt wp built in function
+function control_excerp_length($length){
+    return 10 ;
+}
+add_filter("excerpt_length" , "control_excerp_length");
