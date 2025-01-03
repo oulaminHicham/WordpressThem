@@ -16,7 +16,7 @@ body{
     width: 100%;
 
 }
-/* statrt styling posts */
+/* statrt styling main posts */
 .main--post{
     background-color: #ccc;
     border-radius: 10px;
@@ -46,14 +46,14 @@ body{
   height: 15px;
   color:#262626 ;
 }
-/* end styling posts */
+/* end styling main posts */
+
 /* start styling pagination  */
 .post-pagination{
   width: 500px ;
   margin: 30px auto 40px ;
   text-align: center;
 }
-/* end styling pagination */
 .post-pagination a ,
 .post-pagination span {
   background-color: #fff;
@@ -73,8 +73,14 @@ body{
 .post-pagination .prev{
   margin-right: 10px ;
 }
+/* end styling pagination */
+
+/* start styling single post */
+
+/* end styling sigle post */
 
 
 
 
 /* you start today from video 62 and it is include */
+/* i am in 67 */
