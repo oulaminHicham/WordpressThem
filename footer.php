@@ -1,9 +1,9 @@
     <div class="footer">
             <div class="text-center">
-                copywrite &copy : 2024 hicham oulamine 
+                copywrite &copy : <?php echo date("Y ") ; bloginfo("name") ?>
             </div>
                 <ul class="d-flex justify-content-around mt-4">
-                    <?php 
+                    <?php
                         $pages = get_pages();
                         foreach($pages as $page){
                     ?>
@@ -18,5 +18,3 @@
 
 
 </html
-
-

@@ -42,7 +42,7 @@ function add_menu_to_dom(){
     wp_nav_menu(
         array(
             "theme_location"=>"primaray",
-            "menu_class"=>"navbar-nav me-auto mb-2 mb-lg-0 navbar-right" ,
+            "menu_class"=>"navbar-nav" ,
             'container' => false ,
             "depth"=>2 ,
             "walker"=>new bootstrap_5_wp_nav_menu_walker() , // from the bootsrapNavWolker included
