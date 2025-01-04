@@ -3,7 +3,13 @@ body{
     background-color: #eee;
     height: 500px ;
     }
-
+.post-date div{
+  display: inline ;
+}
+svg{
+  width: 10px ;
+  height: 10px ;
+}
 /* end rools */
 
 .footer{
@@ -17,31 +23,29 @@ body{
 
 }
 /* statrt styling main posts */
-.main--post{
+.home-page .main--post{
     background-color: #ccc;
     border-radius: 10px;
     padding: 30px;
 }
-.main--post .post-auther ,
-.main--post .post-date ,
-.main--post .post-comments {
+.home-page .main--post .post-auther ,
+.home-page .main--post .post-date ,
+.home-page .main--post .post-comments {
   font-size: 12px ;
 }
-.main--post .post-content{
+.home-page .main--post .post-content{
   line-height: inherit;
   color: #666 ;
 }
-.main--post h3{
+.home-page .main--post h3{
     margin-top: 0;
     margin-bottom: 10px ;
     color: #262626;
     text-transform: capitalize;
     font-weight: 300;
 }
-.main--post .post-date div{
-    display: inline;
-}
-.main--post svg{
+.home-page .main--post svg ,
+.posts-page .main--post svg{
   width: 15px ;
   height: 15px;
   color:#262626 ;
@@ -76,11 +80,40 @@ body{
 /* end styling pagination */
 
 /* start styling single post */
-
+.posts-page .main--post{
+  background-color: #fff ;
+  padding: 30px 40px ;
+  border-radius: 10px ;
+}
+.posts-page .post-pagination{
+  width: 100% ;
+  display: flex !important;
+  justify-content: space-around;
+}
 /* end styling sigle post */
 
+/* start styling comments */
+.comments-list ul ,
+.comments-list ol{
+  list-style: none;
+}
+.comments-list >.comment {
+  background-color: #fff ;
+  padding: 10px ;
+  border: 1px solid #eee ;
+  margin-bottom: 10px ;
+}
+.comments-list > .comment > .children > .comment{
+  background-color: #ccc ;
+  padding: 10px ;
+}
+.comments-list > .comment > .children > .comment .comment{
+  background-color: #aaa ;
+  padding: 10px ;
+}
+/* end styling comments */
 
 
 
-/* you start today from video 62 and it is include */
-/* i am in 67 */
+/* you start today from video 68 and it is include */
+/* i am in 73 */
