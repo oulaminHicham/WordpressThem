@@ -65,6 +65,34 @@
 		</div>
 <?php
 	} // end etirate posts is exist
+	// the athor biography
+?>
+	<hr>
+	<div class="row about-author">
+			<div class="col-md-2">
+				<?php
+					echo get_avatar(get_the_author_meta("ID"));
+				 ?>
+			</div>
+			<div class="col-md-10">
+				<h3>
+					<?php the_author_meta("first_name").'  '.the_author_meta("last_name") ?>
+					(<?php the_author_meta("nickname"); ?>)
+				</h3>
+				<p>
+					<?php
+						if(get_the_author_meta("descripton")){
+								the_author_meta("description");
+						}else {
+							echo "author dont have biographie";
+						}
+					?>
+				</p>
+			</div>
+	</div>
+<?php
+	// end of author biography
+
 	// start of pagination
 	echo '<div class="post-pagination">';
 		if(get_previous_post_link())
@@ -83,10 +111,13 @@
 		}
 	echo "</div>";
 	// end o-f pagination
-
+	echo "<hr>";
 	// start displaying comments
 	comments_template();
 	// end of displaying comments
+	echo "<hr>";
+	comment_form() ;
+
 }// end of condition
 else {
 	echo "<div style='height:500px;'";
@@ -95,5 +126,4 @@ else {
 }
 ?>
 </div>
-
 <?php get_footer() ?>

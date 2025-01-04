@@ -5,7 +5,7 @@ if(comments_open()){
     "type"=>"comment"
   );
 ?>
-  <h4><?php comments_number('0 comment' , 'one comment' , "%comments") ?></h4>
+  <h4 class="coments-count"><?php comments_number('0 comment' , 'one comment' , "% comments") ?></h4>
 <?php
   echo "<ul class='list-unstyled comments-list'>";
     wp_list_comments($comments_args) ;

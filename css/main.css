@@ -92,7 +92,40 @@ svg{
 }
 /* end styling sigle post */
 
+/* styling the about athor enside the single poste */
+.about-author{
+  background-color: #fff ;
+  padding: 10px ;
+  margin: 0 10px ;
+  border-radius: 10px;
+}
+.about-author h3{
+  color: #aaa ;
+}
+/* end styling about athor */
 /* start styling comments */
+.coments-count{
+  background-color: #fff;
+  padding: 10px 20px;
+  color: #333;
+  font-weight: bold;
+  font-size: 34px;
+  font-family: emoji;
+}
+.coments-list .says{
+  display: none;
+}
+.comments-list .comment-meta {
+  margin-bottom: 5px;
+  position: relative;
+}
+.comments-list .comment-meta .comment-edit-link{
+  position: absolute;
+  right: 0 ;
+}
+.coments-list .comment .comment-meta{
+
+}
 .comments-list ul ,
 .comments-list ol{
   list-style: none;
@@ -106,14 +139,41 @@ svg{
 .comments-list > .comment > .children > .comment{
   background-color: #ccc ;
   padding: 10px ;
+  border-radius: 10px ;
 }
 .comments-list > .comment > .children > .comment .comment{
   background-color: #aaa ;
   padding: 10px ;
+  margin-bottom:10px;
+  border-radius: 10px ;
+}
+/* styling form comment */
+.comment-respond
+{
+  background-color: #1111 ;
+  padding: 10px ;
+  border-radius: 10px;
+}
+.comment-respond .comment-form-comment label{
+  display: none;
+}
+.comment-respond .comment-form-comment textarea{
+  height: 200px;
+  resize: none;
+  border: none ;
+}
+.comment-respond input{
+  border: none;
+}
+.comment-respond .form-submit .submit{
+  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: blue;
+  color: #fff;
 }
 /* end styling comments */
 
 
 
-/* you start today from video 68 and it is include */
+/* you start today from video 69 and it is include */
 /* i am in 73 */
