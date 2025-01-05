@@ -89,6 +89,10 @@
 					?>
 				</p>
 			</div>
+			<p class="author-stats mt-3">
+				this author share <span class="posts-num"><?php echo count_user_posts(get_the_author_meta("ID")) ?></span> posts
+				<p>the author profile url : <?php the_author_posts_link() ?></p>
+			</p>
 	</div>
 <?php
 	// end of author biography

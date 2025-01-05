@@ -1,7 +1,7 @@
 /* strating rooles */
 body{
     background-color: #eee;
-    height: 500px ;
+    height: 700px ;
     }
 .post-date div{
   display: inline ;
@@ -16,6 +16,7 @@ svg{
     background-color: #111;
     color: #fff;
     padding: 40px;
+    margin-bottom: 0 ;
     /* position: fixed;
     bottom: 0;
     left: 0; */
@@ -173,7 +174,21 @@ svg{
 }
 /* end styling comments */
 
+/* start author profile styling */
+.author-profile{
+  margin-bottom: 10px
+}
+.author-profile .posts-count span ,
+.author-profile .commenst-count span ,
+.author-profile .total-post-view span{
+  font-size: 42px ;
+  text-align: center;
+
+}
+/* end of author profile styling */
 
 
-/* you start today from video 69 and it is include */
-/* i am in 73 */
+
+
+/* i start from 80 include */
+/* i am in 87  */
